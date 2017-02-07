@@ -1,0 +1,19 @@
+{
+  "name": "alod-example",
+  "version": "1.0.0",
+  "description": "aLOD Example Dataset",
+  "main": "index.js",
+  "dependencies": {
+    "fuseki": "^1.0.1",
+    "shelljs": "^0.7.6"
+  },
+  "devDependencies": {},
+  "license": "UNLICENSED",
+  "scripts": {
+    "install": "node install.js",
+    "start": "node bin/alod-fuseki.js"
+  },
+  "bin": {
+    "alod-fuseki": "bin/alod-fuseki.js"
+  }
+}
