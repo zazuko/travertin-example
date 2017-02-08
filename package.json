@@ -4,7 +4,7 @@
   "description": "aLOD Example Dataset",
   "main": "index.js",
   "dependencies": {
-    "fuseki": "^1.0.2",
+    "fuseki": "^1.1.0",
     "shelljs": "^0.7.6"
   },
   "devDependencies": {},
