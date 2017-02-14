@@ -11,10 +11,10 @@
 
 
 :service_tdb_all  a                   fuseki:Service ;
-        rdfs:label                    "TDB alod" ;
+        rdfs:label                    "TDB travertin" ;
 #        fuseki:dataset                :tdb_dataset_readwrite ;
         fuseki:dataset                :text_dataset ;
-        fuseki:name                   "alod" ;
+        fuseki:name                   "travertin" ;
         fuseki:serviceQuery           "query" , "sparql" ;
         fuseki:serviceReadGraphStore  "get" ;
         fuseki:serviceReadWriteGraphStore
@@ -22,22 +22,22 @@
         fuseki:serviceUpdate          "update" ;
         fuseki:serviceUpload          "upload" .
 
-:alodDataset
+:travertinDataset
         a             tdb:DatasetTDB ;
-        tdb:location  "${run}/databases/alod" .
+        tdb:location  "${run}/databases/travertin" .
     ##tdb:unionDefaultGraph true
 
 
 
 
 :text_dataset rdf:type     text:TextDataset ;
-    text:dataset   :alodDataset ;
+    text:dataset   :travertinDataset ;
     text:index     :indexLucene ;
     .
 
 # Text index description
 :indexLucene a text:TextIndexLucene ;
-    text:directory <file:${run}/databases/alod/Lucene> ;
+    text:directory <file:${run}/databases/travertin/Lucene> ;
     text:entityMap :entMap ;
     .
 
