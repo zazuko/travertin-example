@@ -1,7 +1,7 @@
 {
-  "name": "alod-example",
+  "name": "travertin-example",
   "version": "1.0.0",
-  "description": "aLOD Example Dataset",
+  "description": "Travertin Example Dataset",
   "main": "index.js",
   "dependencies": {
     "fuseki": "^1.1.0",
@@ -11,9 +11,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "install": "node install.js",
-    "start": "node bin/alod-fuseki.js"
+    "start": "node bin/travertin-fuseki.js"
   },
   "bin": {
-    "alod-fuseki": "bin/alod-fuseki.js"
+    "travertin-fuseki": "bin/travertin-fuseki.js"
   }
 }
