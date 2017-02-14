@@ -11,7 +11,7 @@ server.start()
 server.wait().then(function () {
   return server.createDataset('/alod', 'tdb')
 }).then(function () {
-  shelljs.exec('curl -v -X POST --form files[]=@input/sample.nq http://localhost:3030/alod/upload')
+  shelljs.exec('curl -v -X POST --form files[]=@input/sample.nq http://localhost:3030/travertin/upload')
 }).catch(function (err) {
   console.error(err.stack || err.message)
 })
